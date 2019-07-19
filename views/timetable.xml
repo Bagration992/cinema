@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="timetable_view" model="ir.ui.view">
+        <field name="name">timetable.view</field>
+        <field name="model">cinema.timetable</field>
+        <field name="arch" type="xml">
+            <form string="Timetable View">
+                <sheet>
+                    <group>
+                        <field name="date">cinema.date</field>
+                        <field name="movie">cinema.movie</field>
+                        <field name="premiere">cinema.premiere</field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="timetable_tree" model="ir.ui.view">
+        <field name="name">timetable.tree</field>
+        <field name="model">cinema.timetable</field>
+        <field name="arch" type="xml">
+            <form string="Timetable View">
+                <sheet>
+                    <group>
+                        <field name="date">cinema.date</field>
+                        <field name="movie">cinema.movie</field>
+                        <field name="premiere">cinema.premiere</field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="timetable_action" model="ir.actions.act_window">
+        <field name="name">Timetable</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cinema.timetable</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
