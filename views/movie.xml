@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="movie_view" model="ir.ui.view">
+        <field name="name">movie.view</field>
+        <field name="model">cinema.movie</field>
+        <field name="arch" type="xml">
+            <form string="Movie View">
+
+                <sheet>
+                    <group>
+                        <field name="name">cinema.name</field>
+                        <field name="genre">cinema.genre</field>
+                        <field name="description">cinema.description</field>
+                        <field name="image">cinema.image</field>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="movie_tree" model="ir.ui.view">
+        <field name="name">movie.tree</field>
+        <field name="model">cinema.movie</field>
+        <field name="arch" type="xml">
+            <form string="Movie View">
+
+                <sheet>
+                    <group>
+                        <field name="name">cinema.name</field>
+                        <field name="genre">cinema.genre</field>
+                        <field name="description">cinema.description</field>
+                        <field name="image">cinema.image</field>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="movie_action" model="ir.actions.act_window">
+        <field name="name">Movies</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cinema.movie</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

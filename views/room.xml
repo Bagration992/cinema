@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="room_view" model="ir.ui.view">
+        <field name="name">room.view</field>
+        <field name="model">cinema.room</field>
+        <field name="arch" type="xml">
+            <form string="Room View">
+
+                <sheet>
+                    <group>
+                        <field name="timetable_id">cinema.timetable_id</field>
+                        <field name="capacity">cinema.capacity</field>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="room_tree" model="ir.ui.view">
+        <field name="name">room.tree</field>
+        <field name="model">cinema.room</field>
+        <field name="arch" type="xml">
+            <form string="Room View">
+
+                <sheet>
+                    <group>
+                        <field name="timetable_id">cinema.timetable_id</field>
+                        <field name="capacity">cinema.capacity</field>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="room_action" model="ir.actions.act_window">
+        <field name="name">Room</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">cinema.room</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

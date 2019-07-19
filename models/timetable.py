@@ -7,7 +7,7 @@ class timetable(models.Model):
 
     _name = 'cinema.timetable'
 
-    date = fields.Datetime(string="Projection starting date", required=True)
+    date = fields.Datetime(string="Projection time", required=True)
 
     movie = fields.Many2one(comodel_name="cinema.movie", string="Movie", required=True)
 

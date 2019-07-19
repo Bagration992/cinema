@@ -15,6 +15,8 @@ simple cinema management system
     'data': [
         'security/ir.model.access.csv',
         'views/timetable.xml',
+        'views/movie.xml',
+        'views/room.xml',
         'views/menu.xml'
     ],
     'demo': [

@@ -5,4 +5,8 @@
 
     <menuitem name="Timetable" id="timetable_menu" parent="cinema_management" action="timetable_action" sequence="1"/>
 
+    <menuitem name="Movies" id="movie_menu" parent="cinema_management" action="movie_action" sequence="1"/>
+
+    <menuitem name="Room" id="room_menu" parent="cinema_management" action="room_action" sequence="1"/>
+
 </odoo>
