@@ -2,6 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models
+from odoo.exceptions import UserError
 
 class timetable(models.Model):
 
@@ -21,7 +22,7 @@ class timetable(models.Model):
 
     remaining_seats = fields.Integer(compute="_get_remaining_seats", store=True, string="Number of seats remaining")
 
-    @api.depends('room')
+    @api.depends('room.capacity')
     def _get_total_seats(self):
         for row in self:
             row.total_seats = row.room.capacity
@@ -29,4 +30,9 @@ class timetable(models.Model):
     @api.depends('sold_seats', 'total_seats')
     def _get_remaining_seats(self):
         for row in self:
-            row.remaining_seats = row.total_seats - row.sold_seats
+            subtraction = row.total_seats - row.sold_seats
+            if subtraction < 0:
+                raise UserError("Number of sold seats cannot exceed number of total seats")
+            else:
+                row.remaining_seats = subtraction
+
