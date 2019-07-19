@@ -13,10 +13,12 @@ simple cinema management system
     'images': [],
     'depends': ['base'],
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
         'views/movie.xml',
         'views/timetable.xml',
         'views/room.xml',
+        #'views/merchandise.xml',
         'views/menu.xml'
     ],
     'demo': [

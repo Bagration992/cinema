@@ -1,4 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cinema_timetable,access_cinema_timetable,model_cinema_timetable,base.group_user,1,1,1,1
-access_cinema_movie,access_cinema_movie,model_cinema_movie,base.group_user,1,1,1,1
-access_cinema_room,access_cinema_room,model_cinema_room,base.group_user,1,1,1,1
+access_mng_cinema_timetable,access_mng_cinema_timetable,model_cinema_timetable,group_manager,1,1,1,1
+access_reg_cinema_timetable,access_reg_cinema_timetable,model_cinema_timetable,group_regular,1,0,0,0
+access_mng_cinema_movie,access_mng_cinema_movie,model_cinema_movie,group_manager,1,1,1,1
+access_reg_cinema_movie,access_reg_cinema_movie,model_cinema_movie,group_regular,1,0,0,0
+access_mng_cinema_room,access_mng_cinema_room,model_cinema_room,group_manager,1,1,1,1
+access_reg_cinema_room,access_reg_cinema_room,model_cinema_room,group_regular,1,0,0,0
+
