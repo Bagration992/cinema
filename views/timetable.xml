@@ -11,6 +11,9 @@
                         <field name="date"/>
                         <field name="movie"/>
                         <field name="room"/>
+                        <field name="sold_seats"/>
+                        <field name="remaining_seats"/>
+                        <field name="total_seats"/>
                         <field name="premiere"/>
                     </group>
                 </sheet>
@@ -26,6 +29,8 @@
                 <field name="date"/>
                 <field name="movie"/>
                 <field name="room"/>
+                <field name="remaining_seats"/>
+                <field name="total_seats"/>
                 <field name="premiere"/>
             </tree>
         </field>
