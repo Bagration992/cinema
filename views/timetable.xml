@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="timetable_view" model="ir.ui.view">
-        <field name="name">timetable.view</field>
+    <record id="timetable_view_form" model="ir.ui.view">
+        <field name="name">timetable.view.form</field>
         <field name="model">cinema.timetable</field>
         <field name="arch" type="xml">
-            <form string="Timetable View">
-
+            <form string="Timetable Form">
                 <sheet>
                     <group>
-                        <field name="date">cinema.date</field>
-                        <field name="movie">cinema.movie</field>
-                        <field name="premiere">cinema.premiere</field>
+                        <field name="date"/>
+                        <field name="movie"/>
+                        <field name="room"/>
+                        <field name="premiere"/>
                     </group>
                 </sheet>
-
             </form>
         </field>
     </record>
 
-    <record id="timetable_tree" model="ir.ui.view">
-        <field name="name">timetable.tree</field>
+    <record id="timetable_view_tree" model="ir.ui.view">
+        <field name="name">timetable.view.tree</field>
         <field name="model">cinema.timetable</field>
         <field name="arch" type="xml">
-            <form string="Timetable View">
-
-                <sheet>
-                    <group>
-                        <field name="date">cinema.date</field>
-                        <field name="movie">cinema.movie</field>
-                        <field name="premiere">cinema.premiere</field>
-                    </group>
-                </sheet>
-
-            </form>
+            <tree string="Timetable Tree">
+                <field name="date"/>
+                <field name="movie"/>
+                <field name="room"/>
+                <field name="premiere"/>
+            </tree>
         </field>
     </record>
 

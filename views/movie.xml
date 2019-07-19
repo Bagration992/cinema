@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="movie_view" model="ir.ui.view">
-        <field name="name">movie.view</field>
+    <record id="movie_view_form" model="ir.ui.view">
+        <field name="name">movie.view.form</field>
         <field name="model">cinema.movie</field>
         <field name="arch" type="xml">
-            <form string="Movie View">
-
+            <form string="Movie Form">
                 <sheet>
                     <group>
-                        <field name="name">cinema.name</field>
-                        <field name="genre">cinema.genre</field>
-                        <field name="description">cinema.description</field>
-                        <field name="image">cinema.image</field>
+                        <field name="name"/>
+                        <field name="genre"/>
+                        <field name="description"/>
+                        <field name="image"/>
                     </group>
                 </sheet>
-
             </form>
         </field>
     </record>
 
-    <record id="movie_tree" model="ir.ui.view">
-        <field name="name">movie.tree</field>
+    <record id="movie_view_tree" model="ir.ui.view">
+        <field name="name">movie.view.tree</field>
         <field name="model">cinema.movie</field>
         <field name="arch" type="xml">
-            <form string="Movie View">
-
-                <sheet>
-                    <group>
-                        <field name="name">cinema.name</field>
-                        <field name="genre">cinema.genre</field>
-                        <field name="description">cinema.description</field>
-                        <field name="image">cinema.image</field>
-                    </group>
-                </sheet>
-
-            </form>
+            <tree string="Movie Tree">
+                <field name="name"/>
+                <field name="genre"/>
+                <field name="description"/>
+                <field name="image"/>
+            </tree>
         </field>
     </record>
 

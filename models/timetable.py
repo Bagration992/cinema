@@ -13,3 +13,5 @@ class timetable(models.Model):
 
     premiere = fields.Boolean(string="Premiere", required=False, default=False)
 
+    room = fields.Many2one(comodel_name="cinema.room", string="Room", required=False)
+

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <menuitem name="Cinema management" id="cinema_management" sequence="1"/>
+    <menuitem name="Cinema management" id="cinema_management_menu" sequence="1"/>
 
-    <menuitem name="Timetable" id="timetable_menu" parent="cinema_management" action="timetable_action" sequence="1"/>
+    <menuitem name="Timetable" id="timetable_menu" parent="cinema_management_menu" action="timetable_action" sequence="1"/>
 
-    <menuitem name="Movies" id="movie_menu" parent="cinema_management" action="movie_action" sequence="1"/>
+    <menuitem name="Movies" id="movie_menu" parent="cinema_management_menu" action="movie_action" sequence="1"/>
 
-    <menuitem name="Room" id="room_menu" parent="cinema_management" action="room_action" sequence="1"/>
+    <menuitem name="Room" id="room_menu" parent="cinema_management_menu" action="room_action" sequence="1"/>
 
 </odoo>

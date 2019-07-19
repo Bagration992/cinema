@@ -14,8 +14,8 @@ simple cinema management system
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/timetable.xml',
         'views/movie.xml',
+        'views/timetable.xml',
         'views/room.xml',
         'views/menu.xml'
     ],

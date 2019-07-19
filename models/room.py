@@ -4,7 +4,7 @@ class Room(models.Model):
 
     _name = 'cinema.room'
 
-    timetable_id = fields.One2many('cinema.timetable', 'date', string="Time")
+    timetable_id = fields.One2many('cinema.timetable', 'room', string="Timetable")
 
-    capacity = fields.Integer(string="Capacity", store=True, default=100)
+    capacity = fields.Integer(string="Capacity", store=True, default=100, required=True)
 
