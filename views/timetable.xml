@@ -16,7 +16,9 @@
                         <field name="total_seats"/>
                         <field name="premiere"/>
                     </group>
+                    <button name="%(launch_the_wizard)d" type="action" string="Buy tickets"/>
                 </sheet>
+
             </form>
         </field>
     </record>

@@ -18,7 +18,7 @@ class timetable(models.Model):
 
     total_seats = fields.Integer(compute="_get_total_seats", store=True, string="Total seats")
 
-    sold_seats = fields.Integer(string="Number of sold seats", store=True, default=1)
+    sold_seats = fields.Integer(string="Number of sold seats", store=True, default=0)
 
     remaining_seats = fields.Integer(compute="_get_remaining_seats", store=True, string="Number of seats remaining")
 
