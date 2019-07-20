@@ -11,7 +11,7 @@ simple cinema management system
     'category': '',
     'website': '',
     'images': [],
-    'depends': ['base'],
+    'depends': ['base', 'account', 'product'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',

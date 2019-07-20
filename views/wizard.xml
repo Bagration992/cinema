@@ -8,6 +8,9 @@
             <form string="Buy Tickets">
                 <group>
                     <field name="tickets"/>
+                    <field name="partner_id"/>
+                    <field name="product_id"/>
+                    <field name="account_id"/>
                 </group>
                 <footer>
                     <button name="buy" type="object"

@@ -5,4 +5,3 @@ access_mng_cinema_movie,access_mng_cinema_movie,model_cinema_movie,group_manager
 access_reg_cinema_movie,access_reg_cinema_movie,model_cinema_movie,group_regular,1,0,0,0
 access_mng_cinema_room,access_mng_cinema_room,model_cinema_room,group_manager,1,1,1,1
 access_reg_cinema_room,access_reg_cinema_room,model_cinema_room,group_regular,1,0,0,0
-
