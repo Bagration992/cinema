@@ -9,8 +9,6 @@
 
     <menuitem name="Room" id="room_menu" parent="cinema_management_menu" action="room_action" sequence="1"/>
 
-    <!--
-    <menuitem name="Merchandise" id="merchandise_menu" parent="cinema_management_menu" action="product_product_action" sequence="1"/>
-    -->
+    <menuitem name="Merchandise" id="merchandise_menu" parent="cinema_management_menu" action="merchandise_action" sequence="1"/>
 
 </odoo>

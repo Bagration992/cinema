@@ -2,7 +2,7 @@ from odoo import api, fields, models
 
 class Merchandise(models.Model):
 
-    # da li je potrebno?
+    # is it needed?
     #_name ='product.product'
 
     _inherit = "product.product"

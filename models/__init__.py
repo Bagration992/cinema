@@ -4,5 +4,5 @@
 from . import timetable
 from . import movie
 from . import room
-#from . import merchandise
+from . import merchandise
 from . import wizard

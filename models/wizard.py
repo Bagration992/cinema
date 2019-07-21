@@ -19,6 +19,7 @@ class Wizard(models.TransientModel):
     #
     partner_id = fields.Many2one(comodel_name="res.partner", string="Partner", required=True)
 
+    # required=True
     account_id = fields.Many2one(comodel_name='account.account', string='Account')
 
     # returns default product

@@ -19,7 +19,7 @@ simple cinema management system
         'views/movie.xml',
         'views/timetable.xml',
         'views/room.xml',
-        #'views/merchandise.xml',
+        'views/merchandise.xml',
         'views/menu.xml'
     ],
     'demo': [
