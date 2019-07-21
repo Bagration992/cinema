@@ -11,7 +11,9 @@
                         <field name="name"/>
                         <field name="genre"/>
                         <field name="description"/>
-                        <field name="image"/>
+                    </group>
+                    <group>
+                        <field name="image" widget="image"/>
                     </group>
                 </sheet>
             </form>

@@ -7,5 +7,6 @@ class Merchandise(models.Model):
 
     _inherit = "product.product"
 
+    # named merch because class name is Merchandise
     merch = fields.Boolean(string="Merchandise", required=False, default=False)
 

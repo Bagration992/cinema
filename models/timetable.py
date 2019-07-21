@@ -22,11 +22,13 @@ class timetable(models.Model):
 
     remaining_seats = fields.Integer(compute="_get_remaining_seats", store=True, string="Number of seats remaining")
 
+    # calculating number of seats
     @api.depends('room.capacity')
     def _get_total_seats(self):
         for row in self:
             row.total_seats = row.room.capacity
 
+    # update in case sold seats increase (or total seats change)
     @api.depends('sold_seats', 'total_seats')
     def _get_remaining_seats(self):
         for row in self:
@@ -35,4 +37,6 @@ class timetable(models.Model):
                 raise UserError("Number of sold seats cannot exceed number of total seats")
             else:
                 row.remaining_seats = subtraction
+
+
 
