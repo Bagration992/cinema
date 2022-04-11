@@ -1,5 +1,5 @@
 # cinema
-Simpe cinema management application. Written in odoo python bussiness framework.
+Simpe cinema management application. Written in odoo python ERP framework.
 
 Zadatak je, u najvećoj mjeri, završen. Rade sva tri dijela zadatka. Moguće su neke manje ispravke koda.
 
